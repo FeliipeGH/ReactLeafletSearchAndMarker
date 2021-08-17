@@ -1,4 +1,4 @@
-# Mi guía para usar mapas de leaflet en React con buscador y marcador al hacer clic.
+# Mi guía para usar mapas de leaflet en React con buscador y marcador al hacer clic. (Spanish-English)
 
 *Advertencia: Mucho texto xd.*
 
@@ -27,7 +27,7 @@ Para que leaflet funcione en react debes realizar primeramente lo siguiente:
 
 Obtenido de la respuesta del usuario jlahd en: https://github.com/PaulLeCam/react-leaflet/issues/881
 
-1.- incluir react-leaflet en la transpilación de babel, procesando correctamente los operadores *??*.
+1.- Incluir react-leaflet en la transpilación de babel, procesando correctamente los operadores *??*.
 
 	npm add -D react-app-rewired react-app-rewire-babel-loader
 
@@ -39,7 +39,9 @@ Obtenido de la respuesta del usuario jlahd en: https://github.com/PaulLeCam/reac
 	    "eject": "react-scripts eject"
 	}
 
-2.- Instalar leaflet: https://react-leaflet.js.org/docs/start-installation/
+2.- Entra al ejemplo, copia y pega el archivo **config-overrides.js** a la raíz de tu proyecto. 
+
+3.- Instalar leaflet: https://react-leaflet.js.org/docs/start-installation/
 
 	npm install react react-dom leaflet
 
@@ -53,11 +55,11 @@ Debes importar los estilos css de leaflet y darle un alto y ancho al mapa, de ot
 
     <MapContainer style={{height: "38rem", width:"100%"}} >...
 
-3.- Importa lo siguiente:
+4.- Importa lo siguiente:
 
     import {MapConsumer, MapContainer, TileLayer, useMap} from 'react-leaflet';
 
-4.- Agregar mapa a tu componente como lo muestra la documentación: https://react-leaflet.js.org/docs/start-setup/
+5.- Agregar mapa a tu componente como lo muestra la documentación: https://react-leaflet.js.org/docs/start-setup/
 Una vez agregado ya tendremos el mapa funcional, aún sin cuadro de búsqueda y selector de ubicación.
 
 Puedes cambiar las coordenadas para poner las de tu preferencia en el atributo Center del componente MapContainer.
@@ -79,7 +81,8 @@ Puedes cambiar las coordenadas para poner las de tu preferencia en el atributo C
 	import {GeoSearchControl, OpenStreetMapProvider} from "leaflet-geosearch";
 
 3.- importar el css del buscador:
-import "leaflet-geosearch/dist/geosearch.css";
+
+    import "leaflet-geosearch/dist/geosearch.css";
 
 4.- En los hijos del MapContainer solo dejar "TileLayer"
 
@@ -243,7 +246,9 @@ From jlahd answer on GitHub: https://github.com/PaulLeCam/react-leaflet/issues/8
 	    "eject": "react-scripts eject"
 	}
 
-2- Install leaflet: https://react-leaflet.js.org/docs/start-installation/
+2- Copy **config-overrides.js** file from example and paste to your project route.
+
+3- Install leaflet: https://react-leaflet.js.org/docs/start-installation/
 
 	npm install react react-dom leaflet
 
@@ -257,11 +262,11 @@ import "leaflet/dist/leaflet.css";
 
     <MapContainer style={{height: "38rem", width:"100%"}} >...
 
-3- Import the following:
+4- Import the following:
 
     import {MapConsumer, MapContainer, TileLayer, useMap} from 'react-leaflet';
 
-4- Add the map to your component as documentation shows: https://react-leaflet.js.org/docs/start-setup/
+5- Add the map to your component as documentation shows: https://react-leaflet.js.org/docs/start-setup/
 
 Having done that, the map is ready to use, without search input and location marker.
 
