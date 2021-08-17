@@ -20,7 +20,7 @@ no dudes en comprarme un café: https://www.buymeacoffee.com/FelipeGH
 
 ## Español
 
-### Demo: https://feliipegh.github.io/ReactLeafletSearchAndMarker/ 
+## <a href="https://feliipegh.github.io/ReactLeafletSearchAndMarker/" target='_blank” rel=”noreferrer noopener'>Demo</a>
 
 ## Sección: Agregando Mapa
 
@@ -229,7 +229,7 @@ to buy me a coffee: https://www.buymeacoffee.com/FelipeGH
 
 ## English
 
-### Demo: https://feliipegh.github.io/ReactLeafletSearchAndMarker/
+## <a href="https://feliipegh.github.io/ReactLeafletSearchAndMarker/" target='_blank” rel=”noreferrer noopener'>Demo</a>
 
 ## Section: Adding Map
 
