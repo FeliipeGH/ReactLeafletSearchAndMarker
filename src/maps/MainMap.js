@@ -18,6 +18,13 @@ function LeafletGeoSearch() {
     });
     useEffect(() => {
         map.addControl(searchControl);
+        // clic on map after loss focus because search
+        const inputContent = document.querySelector(".glass ");
+        const mapContainer = document.getElementById('mapContainer');
+        inputContent.onblur = function () {
+            mapContainer.click();
+        };
+
         return () => map.removeControl(searchControl);
     });
     return null;
@@ -59,7 +66,7 @@ export const MainMap = () => {
     const MapContent = useMemo(() => {
         return (
             <MapContainer center={[18.960336897236065, -99.225899768445]} zoom={12} scrollWheelZoom={true}
-                          style={{height: "80%", width: "100%"}}>
+                          style={{height: "80%", width: "100%"}} id="mapContainer">
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
